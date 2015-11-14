@@ -1,0 +1,19 @@
+master: localhost
+file_client: local
+
+file_roots:
+  base:
+    - /srv/salt/states
+    - /srv/salt/formulas/sun-java-formula
+    - /srv/salt/formulas/storm-formula
+    - /srv/salt/formulas/zookeeper-formula
+
+pillar_roots:
+  base:
+    - /srv/salt/pillar
+
+grains:
+  roles:
+  - zookeeper
+  - storm-nimbus
+  - storm-supervisor
