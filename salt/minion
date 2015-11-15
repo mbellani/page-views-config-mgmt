@@ -7,6 +7,8 @@ file_roots:
     - /srv/salt/formulas/sun-java-formula
     - /srv/salt/formulas/storm-formula
     - /srv/salt/formulas/zookeeper-formula
+    - /srv/salt/formulas/hadoop-formula
+    - /srv/salt/formulas/hostsfile-formula
 
 pillar_roots:
   base:
@@ -14,6 +16,6 @@ pillar_roots:
 
 grains:
   roles:
-  - zookeeper
-  - storm-nimbus
-  - storm-supervisor
+   - zookeeper
+   - storm-nimbus
+   - storm-supervisor
